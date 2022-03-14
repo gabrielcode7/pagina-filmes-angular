@@ -1,0 +1,32 @@
+.div-painel {
+  background-color: rgba(0, 0, 0, 0.719);
+  padding: 10px;
+  text-align: left;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0px;
+}
+
+.imagem-filme {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+
+.div-filme img {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transform: all 0.5s;
+  -webkit-transition: all 0.9s;
+  transform: all 0.5s;
+}
+
+.div-filme:hover img {
+  -moz-transition: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

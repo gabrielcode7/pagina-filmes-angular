@@ -1,0 +1,34 @@
+<div class="div-painel" *ngIf="filmeSelecionado">
+  <img
+    class="imagem-filme"
+    [src]="filmeSelecionado.imagem"
+    [alt]="filmeSelecionado.nome"
+  />
+  <p>
+    Nome: <strong>{{ filmeSelecionado.nome }}</strong>
+  </p>
+  <p>
+    Genêro: <strong>{{ filmeSelecionado.genero }}</strong>
+  </p>
+  <p>
+    Classificação: <strong>{{ filmeSelecionado.classificacao }}</strong
+    >, Ano: <strong>{{ filmeSelecionado.ano }}</strong>
+  </p>
+  <p>
+    Duração:
+    <strong
+      >{{ filmeSelecionado.hora }}h {{ filmeSelecionado.minuto }}m
+      {{ filmeSelecionado.duracao }}</strong
+    >
+  </p>
+  <p>Sinopse: {{ filmeSelecionado.sinopse }}</p>
+</div>
+
+<div class="div-filme" *ngFor="let filme of filmes">
+  <img
+    (click)="clicouNoFilme(filme)"
+    class="imagem-filme animation-1"
+    [src]="filme.imagem"
+    [alt]="filme.nome"
+  />
+</div>

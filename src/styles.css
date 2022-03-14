@@ -1,0 +1,19 @@
+.creditos {
+  font-size: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url('https://img.freepik.com/fotos-gratis/arranjo-de-elementos-do-filme-em-fundo-preto-com-espaco-de-copia_23-2148416800.jpg?size=626&ext=jpg') !important;
+    background-size: auto;
+  }
+}
+
+body {
+  background-image: url('https://img.freepik.com/fotos-gratis/arranjo-de-elementos-do-filme-em-fundo-preto-com-espaco-de-copia_23-2148416800.jpg?size=626&ext=jpg');
+  background-size: cover;
+  color: white;
+  font-family: 'Source Serif Pro', serif;
+}
